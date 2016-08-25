@@ -12,10 +12,9 @@ RUN apt-get update -q && apt-get install -qy \
 
 USER docker
 
-# install R packages
+# setup R local lib
 ENV R_LIBS="/home/docker/R_libs"
 RUN mkdir -p $R_LIBS
-RUN Rscript -e 'install.packages(c("ggplot2","reshape2","dplyr","RColorBrewer"), repos="http://cran.rstudio.com/", clean=TRUE)'
 
 # install texlive
 COPY ./medium.profile /tmp/
@@ -28,6 +27,8 @@ ENV PATH=/home/docker/usr/local/texlive/current/bin/x86_64-linux:$PATH \
     INFOPATH=/home/docker/usr/local/texlive/current/texmf-dist/doc/info:$INFOPATH \
     MANPATH=/home/docker/usr/local/texlive/current/texmf-dist/doc/man:$MANPATH
 
+# install R packages
+RUN Rscript -e 'install.packages(c("ggplot2","reshape2","dplyr","RColorBrewer"), repos="http://cran.rstudio.com/", clean=TRUE)'
 # install extra packages
 RUN tlmgr update --all && tlmgr install \
   algorithms \
