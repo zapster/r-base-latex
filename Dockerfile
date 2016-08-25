@@ -3,8 +3,7 @@ MAINTAINER Josef Eisl <zapster@zapster.cc>
 
 RUN apt-get update -q && apt-get install -qy \
   curl \
-  gnuplot \
-  inkscape \
+  imagemagick \
   make \
   python-pygments \
   && apt-get clean \
