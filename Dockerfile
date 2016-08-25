@@ -2,10 +2,11 @@ FROM r-base:3.3.1
 MAINTAINER Josef Eisl <zapster@zapster.cc>
 
 RUN apt-get update -q && apt-get install -qy \
-  python-pygments \
+  curl \
   gnuplot \
   inkscape \
   make \
+  python-pygments \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
