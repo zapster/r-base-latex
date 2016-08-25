@@ -8,9 +8,6 @@ RUN apt-get update -q && apt-get install -qy \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /data
-VOLUME ["/data"]
-
 USER docker
 
 # install R packages
