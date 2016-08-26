@@ -4,6 +4,7 @@ MAINTAINER Josef Eisl <zapster@zapster.cc>
 RUN apt-get update -q && apt-get install -qy \
   curl \
   imagemagick \
+  librsvg2-bin \
   make \
   python-pygments \
   && apt-get clean \
