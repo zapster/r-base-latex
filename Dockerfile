@@ -32,18 +32,21 @@ RUN Rscript -e 'install.packages(c("ggplot2","reshape2","dplyr","RColorBrewer"),
 # install extra packages
 RUN tlmgr update --all && tlmgr install \
   algorithms \
-  biblatex \
   biber \
-  logreq \
-  csquotes \
+  biblatex \
   comment \
+  csquotes \
+  enumitem \
   hyperxmp \
-  minted \
   ifplatform \
-  xstring \
+  lastpage \
+  logreq \
+  minted \
   pgfplots \
   preprint \
   relsize \
-  sttools
+  sttools \
+  titlesec \
+  xstring
 
 CMD ["bash"]
