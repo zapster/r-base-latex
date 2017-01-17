@@ -3,6 +3,7 @@ MAINTAINER Josef Eisl <zapster@zapster.cc>
 
 RUN apt-get update -q && apt-get install -qy \
   curl \
+  gnupg \
   imagemagick \
   librsvg2-bin \
   make \
@@ -37,11 +38,13 @@ RUN tlmgr update --all && tlmgr install \
   comment \
   csquotes \
   enumitem \
+  ecv \
   hyperxmp \
   ifplatform \
   lastpage \
   logreq \
   minted \
+  paralist \
   pgfplots \
   preprint \
   relsize \
