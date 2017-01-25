@@ -54,7 +54,16 @@ RUN tlmgr update --all && tlmgr install \
   totpages \
   environ \
   trimspaces \
-  ncctools
+  ncctools \
+  libertine \
+  inconsolata \
+  newtx \
+  boondox \
+  mweights \
+  fontaxes \
+  upquote \
+  silence
+
 
 
 CMD ["bash"]
