@@ -50,6 +50,11 @@ RUN tlmgr update --all && tlmgr install \
   relsize \
   sttools \
   titlesec \
-  xstring
+  xstring \
+  totpages \
+  environ \
+  trimspaces \
+  ncctools
+
 
 CMD ["bash"]
