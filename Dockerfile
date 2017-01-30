@@ -29,40 +29,45 @@ ENV PATH=/home/docker/usr/local/texlive/current/bin/x86_64-linux:$PATH \
     MANPATH=/home/docker/usr/local/texlive/current/texmf-dist/doc/man:$MANPATH
 
 # install R packages
-RUN Rscript -e 'install.packages(c("ggplot2","reshape2","dplyr","RColorBrewer"), repos="http://cran.rstudio.com/", clean=TRUE)'
+RUN Rscript -e 'install.packages(c(
+  "dplyr",
+  "ggplot2",
+  "reshape2",
+  "RColorBrewer"
+  ), repos="http://cran.rstudio.com/", clean=TRUE)'
 # install extra packages
 RUN tlmgr update --all && tlmgr install \
   algorithms \
   biber \
   biblatex \
+  boondox \
   comment \
   csquotes \
-  enumitem \
   ecv \
+  enumitem \
+  environ \
+  fontaxes \
   hyperxmp \
   ifplatform \
+  inconsolata \
   lastpage \
+  libertine \
   logreq \
   minted \
+  mweights \
+  ncctools \
+  newtx \
   paralist \
   pgfplots \
   preprint \
   relsize \
+  silence \
   sttools \
   titlesec \
-  xstring \
   totpages \
-  environ \
   trimspaces \
-  ncctools \
-  libertine \
-  inconsolata \
-  newtx \
-  boondox \
-  mweights \
-  fontaxes \
   upquote \
-  silence
+  xstring
 
 
 
