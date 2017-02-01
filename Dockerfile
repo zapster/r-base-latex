@@ -60,6 +60,7 @@ RUN tlmgr update --all && tlmgr install \
   paralist \
   pgfplots \
   preprint \
+  preview \
   relsize \
   silence \
   sttools \
