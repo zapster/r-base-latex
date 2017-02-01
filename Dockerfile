@@ -32,8 +32,9 @@ ENV PATH=/home/docker/usr/local/texlive/current/bin/x86_64-linux:$PATH \
 RUN Rscript -e 'install.packages(c(
   "dplyr",
   "ggplot2",
+  "RColorBrewer",
   "reshape2",
-  "RColorBrewer"
+  "tikzDevice"
   ), repos="http://cran.rstudio.com/", clean=TRUE)'
 # install extra packages
 RUN tlmgr update --all && tlmgr install \
