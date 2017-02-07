@@ -42,6 +42,8 @@ RUN tlmgr update --all && tlmgr install \
   enumitem \
   environ \
   fontaxes \
+  framed \
+  fvextra \
   hyperxmp \
   ifplatform \
   inconsolata \
