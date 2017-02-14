@@ -51,6 +51,7 @@ RUN tlmgr update --all && tlmgr install \
   libertine \
   logreq \
   minted \
+  multirow \
   mweights \
   ncctools \
   newtx \
