@@ -9,7 +9,7 @@ RUN apt-get update -q && apt-get install -qy \
   make \
   libcurl4-openssl-dev \
   libssl-dev \
-  libxml2-dev z
+  libxml2-dev \
   python-pygments \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
