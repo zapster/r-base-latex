@@ -41,6 +41,7 @@ RUN tlmgr update --all && tlmgr install \
   boondox \
   comment \
   csquotes \
+  cleveref \
   ecv \
   enumitem \
   environ \
