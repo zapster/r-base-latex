@@ -45,6 +45,7 @@ RUN tlmgr update --all && tlmgr install \
   ecv \
   enumitem \
   environ \
+  everypage \
   fontaxes \
   framed \
   fvextra \
@@ -70,6 +71,7 @@ RUN tlmgr update --all && tlmgr install \
   totpages \
   trimspaces \
   upquote \
+  draftwatermark \
   xstring
 
 
