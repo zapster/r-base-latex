@@ -72,6 +72,7 @@ RUN tlmgr update --all && tlmgr install \
   trimspaces \
   upquote \
   draftwatermark \
+  xpatch \
   xstring
 
 
