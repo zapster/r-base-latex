@@ -61,6 +61,7 @@ RUN tlmgr update --all && tlmgr install \
   ncctools \
   newtx \
   paralist \
+  pdfx \
   pgfplots \
   preprint \
   preview \
@@ -73,6 +74,7 @@ RUN tlmgr update --all && tlmgr install \
   upquote \
   draftwatermark \
   xpatch \
+  xmpincl \
   xstring
 
 
