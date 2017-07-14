@@ -58,6 +58,7 @@ RUN tlmgr update --all && tlmgr install \
   minted \
   multirow \
   mweights \
+  nowidow \
   ncctools \
   newtx \
   paralist \
@@ -69,7 +70,9 @@ RUN tlmgr update --all && tlmgr install \
   silence \
   sttools \
   titlesec \
+  tabulary \
   totpages \
+  todonotes \
   trimspaces \
   upquote \
   draftwatermark \
