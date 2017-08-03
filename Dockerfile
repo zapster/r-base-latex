@@ -32,7 +32,7 @@ ENV PATH=/home/docker/usr/local/texlive/current/bin/x86_64-linux:$PATH \
     MANPATH=/home/docker/usr/local/texlive/current/texmf-dist/doc/man:$MANPATH
 
 # install R packages
-RUN Rscript -e 'p <- c("tidyverse", "tidyjson", "RColorBrewer", "tikzDevice");install.packages(p, repos="http://cran.rstudio.com/", clean=TRUE); for(x in p) { if (!require(x,character.only = TRUE)) {quit(1)}}'
+RUN Rscript -e 'p <- c("tidyverse", "tidyjson", "RColorBrewer", "tikzDevice", "knitr");install.packages(p, repos="http://cran.rstudio.com/", clean=TRUE); for(x in p) { if (!require(x,character.only = TRUE)) {quit(1)}}'
 # install extra packages
 RUN tlmgr update --all && tlmgr install \
   algorithms \
@@ -71,11 +71,13 @@ RUN tlmgr update --all && tlmgr install \
   sttools \
   titlesec \
   tabulary \
+  threeparttable \
   totpages \
   todonotes \
   trimspaces \
   upquote \
   draftwatermark \
+  xargs \
   xpatch \
   xmpincl \
   xstring
