@@ -54,6 +54,7 @@ RUN tlmgr update --all && tlmgr install \
   inconsolata \
   lastpage \
   libertine \
+  lipsum \
   logreq \
   minted \
   multirow \
@@ -75,6 +76,7 @@ RUN tlmgr update --all && tlmgr install \
   totpages \
   todonotes \
   trimspaces \
+  type1cm \
   upquote \
   draftwatermark \
   xargs \
