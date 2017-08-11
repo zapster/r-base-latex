@@ -37,6 +37,8 @@ RUN Rscript -e 'p <- readLines("/tmp/R.packages"); install.packages(p, repos="ht
 
 # install texlive packages
 COPY ./texlive.packages /tmp/
-RUN tlmgr update --all && /bin/bash -c 'tlmgr install $(cat /tmp/texlive.packages | tr "\n" " ")'
+RUN tlmgr update --all \
+  && /bin/bash -c 'tlmgr install $(cat /tmp/texlive.packages | tr "\n" " ")' \
+  && tlmgr option repository http://mirror.ctan.org/systems/texlive/tlnet
 
 CMD ["bash"]
