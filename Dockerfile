@@ -34,57 +34,9 @@ ENV PATH=/home/docker/usr/local/texlive/current/bin/x86_64-linux:$PATH \
 # install R packages
 COPY ./R.packages /tmp/
 RUN Rscript -e 'p <- readLines("/tmp/R.packages"); install.packages(p, repos="http://cran.rstudio.com/", clean=TRUE); for(x in p) { if (!require(x,character.only = TRUE)) {quit(1)}}'
-# install extra packages
-RUN tlmgr update --all && tlmgr install \
-  algorithms \
-  biber \
-  biblatex \
-  boondox \
-  comment \
-  csquotes \
-  cleveref \
-  ecv \
-  enumitem \
-  environ \
-  everypage \
-  fontaxes \
-  framed \
-  fvextra \
-  hyperxmp \
-  ifplatform \
-  inconsolata \
-  lastpage \
-  libertine \
-  lipsum \
-  logreq \
-  minted \
-  multirow \
-  mweights \
-  nowidow \
-  ncctools \
-  newtx \
-  paralist \
-  pdfx \
-  pgfplots \
-  preprint \
-  preview \
-  relsize \
-  silence \
-  sttools \
-  titlesec \
-  tabulary \
-  threeparttable \
-  totpages \
-  todonotes \
-  trimspaces \
-  type1cm \
-  upquote \
-  draftwatermark \
-  xargs \
-  xpatch \
-  xmpincl \
-  xstring
 
-
+# install texlive packages
+COPY ./texlive.packages /tmp/
+RUN tlmgr update --all && /bin/bash -c 'tlmgr install $(cat /tmp/texlive.packages | tr "\n" " ")'
 
 CMD ["bash"]
