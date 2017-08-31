@@ -43,6 +43,7 @@ hyperref
 hyperxmp
 ifplatform
 iftex
+imakeidx
 inconsolata
 lastpage
 libertine
