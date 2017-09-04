@@ -11,6 +11,7 @@ RUN apt-get update -q && apt-get install -qy \
   libssl-dev \
   libxml2-dev \
   python-pygments \
+  poppler-utils \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
