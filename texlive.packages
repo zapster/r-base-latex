@@ -43,6 +43,7 @@ hyperref
 hyperxmp
 ifplatform
 iftex
+ifoddpage
 imakeidx
 inconsolata
 lastpage
