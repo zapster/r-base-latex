@@ -12,6 +12,7 @@ RUN apt-get update -q && apt-get install -qy \
   libxml2-dev \
   python-pygments \
   poppler-utils \
+  libpoppler-cpp-dev \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
