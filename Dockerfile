@@ -13,6 +13,7 @@ RUN apt-get update -q && apt-get install -qy \
   python-pygments \
   poppler-utils \
   libpoppler-cpp-dev \
+  libmagick++-dev \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
