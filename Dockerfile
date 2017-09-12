@@ -5,17 +5,23 @@ RUN apt-get update -q && apt-get install -qy \
   curl \
   gnupg \
   imagemagick \
-  librsvg2-bin \
-  make \
   libcurl4-openssl-dev \
+  libmagick++-dev \
+  libpoppler-cpp-dev \
+  librsvg2-bin \
   libssl-dev \
   libxml2-dev \
-  python-pygments \
+  make \
   poppler-utils \
-  libpoppler-cpp-dev \
-  libmagick++-dev \
+  python-pygments \
+  unzip \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
+
+# install fira font
+# from https://github.com/matze/mtheme
+ADD ./getFiraFont.sh ./getFiraFont.sh
+RUN ./getFiraFont.sh
 
 USER docker
 

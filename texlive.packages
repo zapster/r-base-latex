@@ -41,9 +41,9 @@ geometry
 hanging
 hyperref
 hyperxmp
+ifoddpage
 ifplatform
 iftex
-ifoddpage
 imakeidx
 inconsolata
 lastpage
@@ -65,6 +65,7 @@ paralist
 parskip
 pdfpages
 pdfx
+pgfopts
 pgfplots
 preprint
 preview
