@@ -1,7 +1,6 @@
 devtools
 knitr
 RColorBrewer
-tidyjson
 tidyverse
 tikzDevice
 pdftools
