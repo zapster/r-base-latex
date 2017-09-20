@@ -42,7 +42,7 @@ ENV PATH=/home/docker/usr/local/texlive/current/bin/x86_64-linux:$PATH \
 
 # install R packages
 COPY ./R.packages /tmp/
-RUN Rscript -e 'p <- readLines("/tmp/R.packages"); install.packages(p, repos="http://cran.rstudio.com/", clean=TRUE); for(x in p) { if (!require(x,character.only = TRUE)) {quit(1)}};devtools::install_github("jeremystan/tidyjson")'
+RUN Rscript -e 'p <- readLines("/tmp/R.packages"); install.packages(p, repos="http://cran.rstudio.com/", clean=TRUE); for(x in p) { if (!require(x,character.only = TRUE)) {quit(1)}}'
 
 # install texlive packages
 COPY ./texlive.packages /tmp/
