@@ -22,6 +22,7 @@ comment
 crop
 csquotes
 csvsimple
+datatool
 draftwatermark
 ecv
 enumitem
@@ -80,6 +81,7 @@ sidecap
 silence
 soul
 spreadtab
+substr
 sttools
 subfig
 tablefootnote
@@ -100,6 +102,7 @@ url
 wrapfig
 xargs
 xcolor
+xfor
 xkeyval
 xmpincl
 xpatch
