@@ -1,0 +1,2 @@
+latexmk
+latexmk -pvc

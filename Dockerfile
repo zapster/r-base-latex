@@ -24,6 +24,8 @@ ADD ./getFiraFont.sh ./getFiraFont.sh
 RUN ./getFiraFont.sh
 
 USER docker
+# preinit bash history
+ADD ./.bash_history /home/docker/.bash_history
 
 # setup R local lib
 ENV R_LIBS="/home/docker/R_libs"
