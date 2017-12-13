@@ -87,6 +87,7 @@ sttools
 subfig
 tablefootnote
 tabulary
+tcolorbox
 textcase
 threeparttable
 titlesec
