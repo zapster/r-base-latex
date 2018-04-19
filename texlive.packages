@@ -65,7 +65,9 @@ natbib
 ncctools
 needspace
 newtx
+newunicodechar
 nowidow
+numprint
 paralist
 parskip
 pdfpages
@@ -82,9 +84,10 @@ sidecap
 silence
 soul
 spreadtab
-substr
 sttools
 subfig
+subfigure
+substr
 tablefootnote
 tabulary
 tcolorbox
