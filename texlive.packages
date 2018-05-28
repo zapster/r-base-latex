@@ -23,6 +23,7 @@ crop
 csquotes
 csvsimple
 datatool
+datetime2
 draftwatermark
 ecv
 enumitem
@@ -93,6 +94,7 @@ tabulary
 tcolorbox
 textcase
 threeparttable
+thmtools
 titlesec
 tocbibind
 todonotes
