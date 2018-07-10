@@ -1,4 +1,4 @@
-FROM r-base:3.3.1
+FROM r-base:3.5.1
 MAINTAINER Josef Eisl <zapster@zapster.cc>
 
 RUN apt-get update -q && apt-get install -qy \
