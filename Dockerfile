@@ -52,4 +52,7 @@ RUN tlmgr update --all \
   && /bin/bash -c 'tlmgr install $(cat /tmp/texlive.packages | tr "\n" " ")' \
   && tlmgr option repository http://mirror.ctan.org/systems/texlive/tlnet
 
+# update lualatex font db
+RUN luaotfload-tool --update
+
 CMD ["bash"]
