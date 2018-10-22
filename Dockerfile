@@ -5,16 +5,17 @@ RUN apt-get update -q && apt-get install -qy \
   curl \
   gnupg \
   imagemagick \
-  libcurl4-openssl-dev \
   libmagick++-dev \
   libpoppler-cpp-dev \
   librsvg2-bin \
-  libssl-dev \
+  libssl1.0-dev \
   libxml2-dev \
   make \
   poppler-utils \
   python-pygments \
   unzip \
+  && apt-get install -qy \ # install later to avoid dependency problem with libssl-dev
+  libcurl4-openssl-dev \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
