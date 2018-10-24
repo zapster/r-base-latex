@@ -9,7 +9,7 @@ RUN apt-get update -q && apt-get install -qy \
   libmagick++-dev \
   libpoppler-cpp-dev \
   librsvg2-bin \
-  libssl-dev \
+  libssl-dev=1.1.1-1 \
   libxml2-dev \
   make \
   poppler-utils \
