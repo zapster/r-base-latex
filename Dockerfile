@@ -1,7 +1,6 @@
 FROM r-base:3.5.1
 MAINTAINER Josef Eisl <zapster@zapster.cc>
 
-# install libcurl4-openssl-dev later to avoid dependency problem with libssl-dev
 RUN apt-get update -q && apt-get install -qy \
   curl \
   gnupg \
@@ -15,7 +14,7 @@ RUN apt-get update -q && apt-get install -qy \
   poppler-utils \
   python-pygments \
   unzip \
-  && apt-get install -qy \
+  && apt-get install -qy \ # install later to avoid dependency problem with libssl-dev
   libcurl4-openssl-dev \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
